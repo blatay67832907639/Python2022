@@ -25,3 +25,8 @@ print(44+10)
 #int("hello world")
 str(int(5/2))
 print("he said that; ammi that is ammi'but my amnes'way wore potanti wanna fly away for a moment iwanna say i dropped four brickes in the ocean kit-kats forever phoning they take a toke'and start zoning")
+print("jack no/  i love you jack")
+ #print("material consisting of threads of cotton, hemp, or other material twisted together to form a thin length.")
+ #a number which is not a fraction; a whole number.
+# print("rest or move on or near the surface of a liquid without sinking.")
+print("183")
