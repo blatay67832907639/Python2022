@@ -30,3 +30,18 @@ print("jack no/  i love you jack")
  #a number which is not a fraction; a whole number.
 # print("rest or move on or near the surface of a liquid without sinking.")
 print("183")
+print(" blake"*10)
+print(5.0 + 10.0)
+print(5/7)
+print(15.0+10.0)
+print("blake")
+print("blake")
+print
+print
+print
+print
+print
+print 
+print 
+print
+print
