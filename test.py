@@ -31,17 +31,40 @@ print("jack no/  i love you jack")
 # print("rest or move on or near the surface of a liquid without sinking.")
 print("183")
 print(" blake"*10)
-print(5.0 + 10.0)
+print(5.0 + 10.0)  #float
 print(5/7)
-print(15.0+10.0)
+print(15.0+10.0)   #float
 print("blake")
 print("blake")
-print
-print
-print
-print
-print
-print 
-print 
-print
-print
+print("blake")
+print("blake")
+print("blake")
+print("blake")
+print("blake")
+print("blake")
+print("blake")
+print("blake")
+print("blake")
+#question 9-18
+print(1000%9)   # modulo 
+print(434//10)   # integer division
+print(3%2)
+print(5%5)
+print(555/2)
+print(123/2)
+print(123//2)
+print(123/2)
+print(764/2)
+print(165//2) 
+print("5+10=" + str(5+10))      
+print("15+2=" + str(7+0.5))
+print("30+2*" + str(75.0))
+my_var = 4
+gravity = 9.8
+player_name = "Hero"
+acceleration = 10
+max_speed = 50 
+print("player_name")
+print(player_name)
+my_var = blakeyboo42
+my_var =$60,000
