@@ -59,12 +59,27 @@ print(165//2)
 print("5+10=" + str(5+10))      
 print("15+2=" + str(7+0.5))
 print("30+2*" + str(75.0))
-my_var = 4
+my_var = 4    
 gravity = 9.8
 player_name = "Hero"
 acceleration = 10
 max_speed = 50 
 print("player_name")
-print(player_name)
-my_var = blakeyboo42
-my_var =$60,000
+print("guest3847")
+print(3)
+print("0275883484")
+print(60,000)
+user = print("blakeyboo92")
+age = print(15)
+year = print(2022)
+print("taylor")
+print("countdown") == ("water melon")
+print("kings high")
+print("ella")
+chocolate = 0
+score = 0
+high_score = 0
+number_of_laps_completed = 0
+bullets_in_gun = 0
+value_of_gear = ("uncommon")
+speed_of_car = 0
