@@ -83,3 +83,29 @@ number_of_laps_completed = 0
 bullets_in_gun = 0
 value_of_gear = ("uncommon")
 speed_of_car = 0
+money = 500
+money = money + 600
+hat = 20
+top = 30 
+pants = 60
+belt = 15
+shoes = 200
+print(1100)
+print("buying hat")
+print(1100-20)
+print("you now have 1080$ left")
+print("buying top")
+print("buying pants")
+print("buying belt")
+print("buying shoes")
+user_name = input("user34839 could you please push any key folowed by pushing enter.")
+user_name = input("please type your user_name here ande push enter")
+user_name = input ("thanks loging you on")
+user_name =("logging you on")
+user_name = input("hello user could you please type your age and enter")
+user_name = input("thanks uploading to your profile.")
+user_name = input("hello user whats your favorite movie")
+user_name = input("nice choice!")
+user_name = input("also user what is your favorite book")
+user_name = input("nice choice im a fan my self!")
+user_name = intput("what
