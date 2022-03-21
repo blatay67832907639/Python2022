@@ -7,29 +7,43 @@ space = Room("""
     """)
 
 
-spaceship = Room("""
+bridge = Room("""
     The bridge if the spaceship is shiny and white, with thousands 
     of small, red, blinking lights.
     """)
 
 
+cargo_bay = room("""
+    the place were the cargo is stored
+    """)
+
+docking_bay = room("""
+   a room were other space crafts join and depart
+   """)
+
+
+cockpit = room("""
+   the room you control the hole space craft in and all the things on the ship
+   """)
+
+
+#variables
 current_room = space
 
 @when("enter airlock")
 @when("enter spaceship")
 @when("enter ship")
 def enter_spaceship():
-    global current_room
-    #check if action can be done
-    if current_room is not space:
-        say("there is no airlock here")
-        return
-
-else:
+  global current_room
+  #check if action can be done
+  if current_room is not space:
+    say("there is no airlock here")
+    return
+  else:
     current_room = spaceship
     print("""you heave yourself into the spaceship and slam
-    you hand on the button to close the door.
-    """)
+      you hand on the button to close the door.
+      """)
 
 
     
