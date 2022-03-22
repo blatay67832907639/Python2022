@@ -7,25 +7,64 @@ space = Room("""
     """)
 
 
+cargo = room("""
+    the place were the cargo is stored
+    """)
+
+
+
+docking = room("""
+   a room were other space crafts join and depart
+   """)
+
+
+airlock = room("""
+    the door witch you enter to leave and enter space through ship
+    """)
+
+
+hallway = room("""
+   the hall way leeding to all the rooms
+    """)
+
 bridge = Room("""
     The bridge if the spaceship is shiny and white, with thousands 
     of small, red, blinking lights.
     """)
 
 
-cargo_bay = room("""
-    the place were the cargo is stored
+quarters = room("""
+        were the cabin/crew mates sleep   
+        """)          
+
+
+
+
+mess_hall = room("""
+     a place in the ship where the astranauts eat and drink
+        """)
+
+
+
+escape_pods = room("""
+    these pods are used for emergency only 
     """)
 
-docking_bay = room("""
-   a room were other space crafts join and depart
-   """)
+
 
 
 cockpit = room("""
    the room you control the hole space craft in and all the things on the ship
    """)
 
+spaceship.east = hallway
+spaceship.south = quarters
+hallway.east == bridge 
+hallway.north = cargo
+
+@when ("go DIRECTRION")
+def travel(direction):
+    pass
 
 #variables
 current_room = space
