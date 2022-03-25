@@ -64,7 +64,33 @@ hallway.north = cargo
 
 @when ("go DIRECTRION")
 def travel(direction):
-    pass
+    global current_room 
+    if direction in current_room.exits():
+         current_room = current_room.exit(direction)
+         print(f"you go {direction}.")
+         print(current_room)
+
+
+                 @when("look")
+                 def look():
+                          print(current_room)
+                          print(f"There are exits to the {current_room.exits()}.")
+                          if len(current_room.items) > 0: #if there are some items in the room 
+                                  print("you also see:")
+                                   for item in current_room.items;
+                                           print(item)#print out each item
+
+@when("get ITEM")
+@when("take ITEM")
+@when("pick up ITEM")
+def pickup (item):
+    if item in current_room.items:
+        t = current_room.items.take(item)
+        inventory.add(t)
+        print(f"you pick up the {item}")
+      else:
+        print(f"you dont see a {item}")
+        
 
 #variables
 current_room = space
