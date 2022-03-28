@@ -71,14 +71,14 @@ def travel(direction):
          print(current_room)
 
 
-                 @when("look")
-                 def look():
-                          print(current_room)
-                          print(f"There are exits to the {current_room.exits()}.")
-                          if len(current_room.items) > 0: #if there are some items in the room 
-                                  print("you also see:")
-                                   for item in current_room.items;
-                                           print(item)#print out each item
+@when("look")
+def look():
+    print(current_room)
+              print(f"There are exits to the {current_room.exits()}.")
+              if len(current_room.items) > 0: 
+              print("you also see:")
+              for item in current_room.items;
+              print(item)
 
 @when("get ITEM")
 @when("take ITEM")
@@ -91,6 +91,39 @@ def pickup (item):
       else:
         print(f"you dont see a {item}")
         
+
+@when("look at ITEM")
+def look_at(item):
+    if item in inventory:
+        t = inventory.find(item)
+        print(t.description)
+    else:
+         print(f"you aren't carrying an {item}")
+
+if current_room == bridge and escape_pod_open == false and direction == "south"
+  print("the door is locked. you need a keycard to swipe")
+  return
+
+
+
+
+
+@when("inventory")
+@when("show inventory")
+@when("whats in my pocket")
+def player_inventory():
+    print("you are carrying")
+    for item in inventory:
+        print(item)
+
+
+
+
+
+
+
+
+
 
 #variables
 current_room = space
