@@ -57,10 +57,27 @@ cockpit = room("""
    the room you control the hole space craft in and all the things on the ship
    """)
 
+
+
 spaceship.east = hallway
 spaceship.south = quarters
-hallway.east == bridge 
+hallway.east == bridge      
 hallway.north = cargo
+hallway.south = mess_hall
+
+
+#define Item 
+Item.description = "" #this adds a blank description to each item
+room.items = bag()
+mess_hall.items.add(red_keycard)
+red_keycard.description = "it,s a red keycard. it probly opens a door or a locker"
+
+knife = Item("a dirty knife","knife")
+knife.description = "the knife has a dull sheen to it but it looks rather sharp."
+
+
+cargo.items.add(knife)
+
 
 @when ("go DIRECTRION")
 def travel(direction):
@@ -74,11 +91,11 @@ def travel(direction):
 @when("look")
 def look():
     print(current_room)
-              print(f"There are exits to the {current_room.exits()}.")
-              if len(current_room.items) > 0: 
-              print("you also see:")
-              for item in current_room.items;
-              print(item)
+    print(f"There are exits to the {current_room.exits()}.")
+    if len(current_room.items) > 0: 
+       print("you also see:")
+       for item in current_room.items;
+           print(item)
 
 @when("get ITEM")
 @when("take ITEM")
@@ -107,7 +124,6 @@ if current_room == bridge and escape_pod_open == false and direction == "south"
 
 
 
-
 @when("inventory")
 @when("show inventory")
 @when("whats in my pocket")
@@ -115,13 +131,6 @@ def player_inventory():
     print("you are carrying")
     for item in inventory:
         print(item)
-
-
-
-
-
-
-
 
 
 
@@ -146,9 +155,7 @@ def enter_spaceship():
 
     
 
- 
-
-@when("brush teeth")
+ @when("brush teeth")
 @when("brush")
 @when("clean teeth")
 def brush_teeth():
@@ -160,8 +167,6 @@ def comb_hair():
     you brush your long flowing locks with the gold hairbrush that you have selected from the 
     in the red basket.
     """) 
-
-
 
 
 
