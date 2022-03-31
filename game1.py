@@ -93,8 +93,8 @@ def look():
     print(current_room)
     print(f"There are exits to the {current_room.exits()}.")
     if len(current_room.items) > 0: 
-       print("you also see:")
-       for item in current_room.items;
+    print("you also see:")
+    for item in current_room.items
            print(item)
 
 @when("get ITEM")
@@ -120,7 +120,7 @@ def look_at(item):
 if current_room == bridge and escape_pod_open == false and direction == "south"
   print("the door is locked. you need a keycard to swipe")
   return
-
+item.
 
 
 
